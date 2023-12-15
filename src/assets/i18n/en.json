@@ -1,0 +1,16 @@
+{
+	"demo.heading": "App Translation Demo",
+    "demo": {
+        "title":"Angular training",
+		"text": "Welcome to this test application"
+		
+	},
+    "users":{
+        "lastName":"Last Name",
+        "firstName":"First Name"
+        },
+        "sideBar":{
+            "home":"Home",
+            "gestion":"Manage users"
+        }
+}

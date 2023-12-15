@@ -1,0 +1,45 @@
+<app-menu ></app-menu>
+<div class="container" style="margin-left: 200px; padding-right: 40px;max-width: 1000px !important;
+">
+    <div class="table-responsive">
+        <div class="table-wrapper">
+            <!-- <div class="table-title">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <h2>User <b>Management</b></h2>
+                    </div>
+                </div>
+            </div> -->
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Avatar</th>						
+                        <th>{{firstName|translate}}</th>
+                        <th>{{lastName|translate}}</th>
+                        <th>Email Adress</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                  
+                    <tr *ngFor="let item of users?.data" >
+                        <td>{{item.id}}</td>
+                        <td><a><img [src]="item.avatar" class="avatar" alt="Avatar"></a></td>
+                        <td>{{item.first_name}}</td>                        
+                        <td>{{item.last_name}}</td>                        
+                        <td>{{item.email}}</td>                        
+                        
+                        <td>
+                            <a  class="settings" title="Delete" (click)="deleteUser(item.id)" style="color: red;" data-toggle="tooltip"><i class="fas fa-trash"></i></a>
+                            <a  class="settings" title="Update" style="color: green;" data-toggle="tooltip"><i class="fas fa-refresh"></i></a>
+                        </td>
+                    </tr>
+          
+                </tbody>
+            </table>
+          
+      
+        </div>
+    </div>
+</div>    

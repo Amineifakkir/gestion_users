@@ -1,0 +1,19 @@
+{
+	"demo.heading": "Démo de traduction d'applications",
+
+    "demo": {
+	    "title":"Formation angular",
+		"text": "Bienvenue sur cette application de test"
+	},
+    "users":{
+    "lastName":"Nom",
+    "firstName":"Prénom"
+    },
+    "sideBar":{
+        "home":"Accueil",
+        "gestion":"Gérer les utilisateurs"
+    }
+}
+
+
+
